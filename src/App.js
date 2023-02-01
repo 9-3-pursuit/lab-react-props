@@ -49,7 +49,7 @@ function App() {
         </section>
         <section className="">
           <Progress donations={donations} target={targetAmount}/>
-          <DonationForm donations={donations}/>
+          <DonationForm />
         </section>
       </main>
     </>
