@@ -1,4 +1,4 @@
-export default function TopBar() {
+const TopBar = () => {
   return (
     <header>
       <h1>
@@ -7,4 +7,6 @@ export default function TopBar() {
       <p>Help me go on a vacation to a beach somewhere!</p>
     </header>
   );
-}
+};
+
+export default TopBar;
