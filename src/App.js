@@ -58,16 +58,12 @@ export default class App extends React.Component {
           <Progress 
           total = {donationtally} targetAmount = {targetAmount}/>
           < DonationForm
-          const donationcount ={donations.length +1}/>
+          const donationcount ={donations.length +1}
+          />
         </section>
+
         </main>
       </>
     );
   }
 }
-
-
-
-   
-
-export default App;
