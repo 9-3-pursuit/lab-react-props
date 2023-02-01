@@ -1,7 +1,7 @@
 const DonationForm = (props) => {
   return (
     <section className="Donation">
-      <h3>You could be donation <span class="secondary">#1!</span></h3>
+      <h3>You could be donation <span class="secondary">#{props.donorPosition}!</span></h3>
       <form>
       <label htmlFor="name"
         >Name<input
