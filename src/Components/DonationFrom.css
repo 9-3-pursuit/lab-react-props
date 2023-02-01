@@ -1,0 +1,13 @@
+form span {
+    color: rgb(170, 120, 150) 
+}
+
+input, label {
+    margin: 5px 0px;
+}
+
+button {
+    margin-top: 5px;
+    background-color: rgb(80, 155, 150);
+    height: 25px
+}
