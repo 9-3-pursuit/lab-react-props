@@ -1,0 +1,14 @@
+.name,
+.caption {
+    font-size: 18px;
+}
+
+.name {
+    color: #2f9c94;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.caption {
+    margin-top: 0;
+}

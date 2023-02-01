@@ -1,0 +1,19 @@
+.donationForm {
+    display: grid;
+    justify-items: start;
+    gap: 10px;
+}
+
+input {
+    font-size: 14px;
+    width: 150px;
+    height: 15px;
+}
+
+.formButton {
+    color: black;
+    background: #2f9c96;
+    height: 40px;
+    font-weight: 600;
+}
+
