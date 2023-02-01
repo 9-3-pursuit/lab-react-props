@@ -1,11 +1,15 @@
-function RecentDonations({ donations }) {
+function RecentDonations({ donations }) { //can destructure inm the function parameter
+
   console.log(donations)
   return (
     <section>
       <h2>Recent Donations</h2>
       <ul>
+        {donations.map((givenAmts) => {
 
-      {<li><span>${donations.name} donated ${donated.amount}</span>${donations.caption}</li>}  
+          return (<li><span>{givenAmts.name} donated ${givenAmts.amount}</span>{givenAmts.caption}</li>)
+        })}
+
 
       </ul>
     </section>

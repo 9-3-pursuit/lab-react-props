@@ -13,5 +13,6 @@ function Progress({ donations, targetAmount }) {
       </h2>
     </section>
   )
+
 }
 export default Progress
