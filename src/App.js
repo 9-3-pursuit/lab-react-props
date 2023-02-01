@@ -1,6 +1,7 @@
 import React from "react";
 import TopBar from "./Components/TopBar";
 import "./App.css";
+import DonationForm from "./Components/DonationForm";
 
 const targetAmount = 1000;
 const donations = [
