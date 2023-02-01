@@ -44,7 +44,7 @@ function App() {
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
+        <section className="sidebar"><RecentDonations donations={donations} /> </section>
         <section className="sidebar">
         <Progress targetAmount={targetAmount} donations={donations} />
           <DonationForm donations={donations} />
@@ -52,6 +52,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;

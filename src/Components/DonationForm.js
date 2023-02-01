@@ -34,6 +34,6 @@ const DonationForm = ({ donations }) => {
       </section>
     </>
   );
-}
+};
 
 export default DonationForm;
