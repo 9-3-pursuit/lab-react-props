@@ -8,4 +8,4 @@ const Progress = (props) => {
     </section>
   )
 }
-export default  Progress
+export default Progress
