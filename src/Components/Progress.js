@@ -2,8 +2,8 @@ const Progress = (props) => {
   return(
     <section className="progress">
     <h2>
-      Raised <span className="secondary">$0</span> of
-      <span className="secondary">$1000</span>
+      Raised <span className="secondary">${props.total}</span> of
+      <span className="secondary">${props.targetAmount}</span>
     </h2>
     </section>
   )
