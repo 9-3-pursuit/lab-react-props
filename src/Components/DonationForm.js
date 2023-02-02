@@ -2,7 +2,7 @@ function DonationForm(props) {
   // console.log(donations)
   return (
     <section className="donation">
-      <h3>You could be donation <span class="secondary">#{props.length + 1}!</span></h3>
+      <h3>You could be donation <span class="secondary"># +1 !</span></h3>
       <form>
         <label htmlFor="name"
         >Name<input
