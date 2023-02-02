@@ -9,7 +9,7 @@ function Progress(props) {
     <section className="progress">
       <h2>
         Raised <span className="secondary">$335</span> of
-        <span className="secondary">${props.targetAmount}</span>
+        <span className="secondary"> ${props.targetAmount}</span>
       </h2>
     </section>
   )
