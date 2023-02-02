@@ -40,13 +40,11 @@ const donations = [
 ];
 
 function App() {
-  // Finds the total amount raised so far
+  // Finds the total amount raised so far (for Progress.js)
   let amountRaised = 0
   donations.forEach((donation) => {
     amountRaised += donation.amount
   })
-  // Progression on Donations
-
   // Recent Donations Container
   const allDonations = donations.map((item) => {
     return (
@@ -55,6 +53,14 @@ function App() {
       </li>
     );
   })
+  // Donation Form
+  // Establishes which number donator the user is
+  let donatorNum = 1
+  donations.forEach((donation) => {
+    donatorNum += 1
+  })
+  // Form logic
+
 
   return (
     <>
@@ -65,7 +71,7 @@ function App() {
         </section>
         <section className="">
           <Progress raised={amountRaised} target={targetAmount}/>
-          {/* Donation Form */}
+          <DonationForm donNum={donatorNum}/>
         </section>
       </main>
     </>
