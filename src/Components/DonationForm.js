@@ -3,15 +3,15 @@ export default function DonationForm( {donations} ) {
     <div>
       <h2>You could be donation <span className="secondary">#{donations.length + 1}!</span></h2>
       <form className="donation">
-        <label>Name <br></br>
-        <input type="text"/>
-        </label><br></br>
-        <label>Caption <br></br>
-        <input type="text" />
-        </label><br></br>
-        <label>Amount <br></br>
-        <input type="text" />
-        </label><br></br>
+        <label>Name 
+        <input type="text" placeholder="Your name..." />
+        </label>
+        <label>Caption 
+        <input type="text" placeholder="Add a brief message..." />
+        </label>
+        <label>Amount 
+        <input type="text"placeholder="0" />
+        </label>
         <input type="submit" value="Donate!" />
       </form>
     </div>
