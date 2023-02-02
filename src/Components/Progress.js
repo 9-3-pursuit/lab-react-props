@@ -1,3 +1,4 @@
-export default function Progress() {
+export default function Progress(donations, targetAmount) {
+  
   return null;
 }
