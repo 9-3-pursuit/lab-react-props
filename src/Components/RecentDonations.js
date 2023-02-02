@@ -1,6 +1,6 @@
 export default function RecentDonations( { donations } ) {
   const recentDonation = donations.map((donation) => {
-    return <li><span className="sidebar">{donation.name} donated ${donation.amount}</span> 
+    return <li><span>{donation.name} donated ${donation.amount}</span> 
     {donation.caption}</li>
         
       
@@ -8,7 +8,7 @@ export default function RecentDonations( { donations } ) {
 
   
   return (
-    <div>
+    <div className="sidebar">
       <h1>Recent Donations</h1>
       <ul>{ recentDonation }</ul>
     </div>
