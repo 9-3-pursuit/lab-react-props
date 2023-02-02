@@ -1,7 +1,10 @@
 import React from "react";
 import TopBar from "./Components/TopBar";
+import DonationForm from "./Components/DonationForm";
+import Progress from "./Components/Progress";
+import RecentDonations from "./Components/RecentDonations";
 import "./App.css";
-
+let current = 0
 const targetAmount = 1000;
 const donations = [
   {
@@ -35,16 +38,19 @@ const donations = [
     name: "Sam",
   },
 ];
+donations.forEach(donation => {
+  current += donation.amount
+})
 
 function App() {
   return (
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
+        <section className="sidebar">{<RecentDonations recentDonations= {donations} />}</section>
         <section className="">
-          {/* Progress */}
-          {/* Donation Form */}
+          {<Progress raised={current} target={targetAmount}/>}
+          {<DonationForm donations={donations}/>}
         </section>
       </main>
     </>
