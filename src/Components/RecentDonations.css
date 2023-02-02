@@ -1,0 +1,46 @@
+p{
+  text-decoration: solid;
+}
+.donated {
+  color: rgb(48, 144, 112);
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif
+  
+}
+.numberColor{
+  color:rgb(142, 102, 162);
+
+}
+
+.numberColour{
+  color:rgb(142, 102, 162);
+}
+.numberSix{
+  color:rgb(142, 102, 162);
+}
+.sidebar{
+  border-radius: 5px;
+  border-style: solid;
+  background: linear-gradient(90deg, rgba(17,0,36,0) 0%, rgba(34,9,121,0.6685267857142857) 100%, rgba(0,255,203,1) 100%);
+}
+body{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,86,253,0.5424763655462185) 100%);
+}
+.name,.caption,.number{
+  width:250px;
+  height:35px;
+  margin-top: 10px;
+  border-radius: 50px;
+  background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(231,233,238,0.5424763655462185) 100%);
+  text-align: center;
+  margin-bottom:10px ;
+
+}
+.donates{
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(168,189,50,0.3015800070028011) 100%, rgba(252,176,69,1) 100%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width:250px;
+  height:35px;
+}

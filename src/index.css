@@ -11,6 +11,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+ 
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,86,253,0.5424763655462185) 100%);
 }
 
 h1,
