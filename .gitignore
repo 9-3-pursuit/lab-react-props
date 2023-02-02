@@ -30,4 +30,5 @@ cypress/integration/examples
 cypress/fixtures/example.json
 
 # junit
-junit*.xml
+junit*.xmlcypress/downloads
+*cypress/downloads
