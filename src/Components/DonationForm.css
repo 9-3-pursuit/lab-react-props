@@ -1,0 +1,13 @@
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    margin-left: 15px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: orange;
+}
