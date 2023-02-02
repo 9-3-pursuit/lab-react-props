@@ -1,9 +1,8 @@
-import RecentDonations from "./RecentDonations";
-const Progress = ({donations,targetAmount}) => {
+const Progress = (donations,targetAmount) => {
 return(
   <section className="progress">
     <h2>
-      Raised{" "}
+      Raised
       <span className="secondary">
         ${donations.reduce((accu,curr) => (accu += curr.amount), 0)}
       </span>{" "}
@@ -13,4 +12,4 @@ return(
   </section>
 );
 }
-export default Progress;
+export default Progress
