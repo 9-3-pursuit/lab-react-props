@@ -1,4 +1,5 @@
-export default function TopBar() {
+export default function TopBar({donations, targetAmount}) {
+  
   return (
     <header>
       <h1>
