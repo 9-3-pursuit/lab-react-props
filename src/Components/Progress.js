@@ -1,6 +1,6 @@
 import './Progress.css'
 
-function Progress(props) {
+const Progress = (props) => {
 
 
   let sum = 0
@@ -11,7 +11,7 @@ function Progress(props) {
   
   
   return (<div>
-    <h2>Raised ${sum} of ${props.target}</h2>  
+    <h2>Raised <span className='pink'>${sum}</span> of <span className='pink'>${props.target}</span></h2>  
     
 
   </div>

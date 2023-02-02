@@ -1,10 +1,10 @@
-import './DonationForm'
+import './DonationForm.css'
 
-function DonationForm(props) {
+const DonationForm = (props) =>{
   return (
     <div>
       <form>
-      <h3>You could be donation #{props.donations.length++}! </h3>
+      <h3>You could be donation <span className='pink'>#{props.donations.length++}!</span> </h3>
         <label>Name</label>
       <br/>
         <input type="text" placeholder="Your Name"></input>
@@ -22,7 +22,7 @@ function DonationForm(props) {
         <input type="text" placeholder="0"></input>
         <br />
         <br/>
-      <button>Donate</button>
+      <button className='green'>Donate!</button>
       </form>
       </div>
   )

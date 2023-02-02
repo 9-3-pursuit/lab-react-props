@@ -1,6 +1,6 @@
 import './RecentDonations.css'
 
-function RecentDonations(props) {
+const RecentDonations = (props) => {
  
   console.log(props.donations)
 
