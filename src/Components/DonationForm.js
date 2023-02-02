@@ -1,8 +1,10 @@
 function DonationForm(props) {
+  
   // console.log(donations)
   return (
     <section className="donation">
-      <h3>You could be donation <span class="secondary"># +1 !</span></h3>
+      <h3>You could be donation <span class="secondary">#{props.donations}!</span></h3> 
+      {/* props.name of you variable to make it refer to the working code in app.js files */}
       <form>
         <label htmlFor="name"
         >Name<input
