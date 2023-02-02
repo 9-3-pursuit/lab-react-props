@@ -1,5 +1,8 @@
 import React from "react";
 import TopBar from "./Components/TopBar";
+import RecentDonations from "./Components/RecentDonations";
+import Progress from "./Components/Progress"
+import DonationForm from "./Components/DonationForm"
 import "./App.css";
 
 const targetAmount = 1000;
@@ -37,14 +40,38 @@ const donations = [
 ];
 
 function App() {
+  // Finds the total amount raised so far (for Progress.js)
+  let amountRaised = 0
+  donations.forEach((donation) => {
+    amountRaised += donation.amount
+  })
+  // Recent Donations Container
+  const allDonations = donations.map((item) => {
+    return (
+      <li>
+        <span>{item.name} donated ${item.amount}</span> {item.caption}
+      </li>
+    );
+  })
+  // Donation Form
+  // Establishes which number donator the user is
+  let donatorNum = 1
+  donations.forEach((donation) => {
+    donatorNum += 1
+  })
+  // Form logic
+
+
   return (
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
+        <section className="sidebar">
+          <RecentDonations donation={allDonations}/>
+        </section>
         <section className="">
-          {/* Progress */}
-          {/* Donation Form */}
+          <Progress raised={amountRaised} target={targetAmount}/>
+          <DonationForm donNum={donatorNum}/>
         </section>
       </main>
     </>
