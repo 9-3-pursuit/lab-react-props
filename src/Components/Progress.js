@@ -3,7 +3,7 @@ const Progress = (props) => {
     <section className="progress">
     <h2>
       Raised <span className="secondary">${props.total}</span> of
-      <span className="secondary">${props.targetAmount}</span>
+      <span className="secondary"> ${props.targetAmount}</span>
     </h2>
     </section>
   )
