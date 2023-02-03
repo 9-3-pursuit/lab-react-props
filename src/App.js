@@ -44,11 +44,11 @@ function App() {
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
+        <section className="sidebar">RecentDOnations donations = {donations}</section>
         <section className="">
           {/* Progress */}
           <DonationForm donations = {donations} />
-          <Progress targetAmount = {targetAmount} />
+          <Progress donations = {donations} />
         </section>
       </main>
     </>
