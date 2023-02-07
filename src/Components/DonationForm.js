@@ -29,4 +29,4 @@ export default function DonationForm(props) {
   </form>
 </section>
 );
-};
+}
