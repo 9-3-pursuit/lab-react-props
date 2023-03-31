@@ -1,28 +1,26 @@
 export default function DonationForm(props) {
   console.log(props.allDonations.length+1);
-  return <section className="donation">
-  <h3>You could be donation <span className="secondary">#{props.allDonations.length}!</span></h3>
-  <form>
-    <label htmlFor="name"
-      >Name<input
+  return (
+  <section className="donation">
+    <h3>You could be donation <span className="secondary">#{props.allDonations.length+1}!</span></h3>
+      <form>
+    <label htmlFor="name">Name<input
         id="name"
         name="name"
         type="text"
-        placeholder="Your name..." /></label
-    ><label htmlFor="caption"
-      >Caption<input
+        placeholder="Your name..." /></label>
+    <label htmlFor="caption">Caption<input
         id="caption"
         name="caption"
         type="text"
-        placeholder="Add a brief message..." /></label
-    ><label htmlFor="amount"
-      >Amount<input
+        placeholder="Add a brief message..." /></label>
+    <label htmlFor="amount">Amount<input
         id="amount"
         name="amount"
         type="number"
-        placeholder="0" /></label
-    ><button>Donate!</button>
-  </form>
-</section>
-
+        placeholder="0" /></label>
+      <button>Donate!</button>
+    </form>
+  </section>
+  )
 };
